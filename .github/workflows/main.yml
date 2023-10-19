@@ -20,7 +20,7 @@ jobs:
       - name: Build and deploy Container App
         uses: azure/container-apps-deploy-action@v1
         with:
-          appSourcePath: ${{ github.workspace }}/src
+          appSourcePath: ${{ github.workspace }}
           acrName: ca71cec68c35acr
           containerAppName: acr-build-helloworld-node
           resourceGroup: rg-config-test
